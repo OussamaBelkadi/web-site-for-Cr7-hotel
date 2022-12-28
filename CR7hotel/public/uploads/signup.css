@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/uploads/img/pexels-pixabay-258154.jpg");
+    padding: 10px;
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    border: 1px solid #32709a;
+    background: linear-gradient(135deg, #c9b392, #c3830e);
+}
+.container .titel{
+    font-size: 26px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 10px;
+}
+.container .titel::before{
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 28px;
+    background: #764602;
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .user-details .input-box{
+    margin: 20px 0 12px 0;
+    width: calc( 100% / 2 - 20px);
+}
+.user-details .input-box .details{
+    font-weight: 500;
+    margin-bottom: 13px;
+}
+.user-details .input-box input{
+    margin-top: 5px;
+    display: block;
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #362001c5;
+}
+button{
+    display: block;
+    border: #764602;
+    background: #32709a;
+}
+

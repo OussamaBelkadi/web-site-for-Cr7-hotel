@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/uploads/img/pexels-pixabay-258154.jpg");
+}
+.login{
+    width: 360px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #c9b392, #c3830e);
+}
+.login h1{
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+.login form{
+    font-size: 20px;
+}
+.login form .form-group{
+    margin-bottom: 12px;
+}
+.login form input[type='submit']{
+    font-size: 20px;
+    margin-top: 15px;
+    border: 1px solid #000000;
+    background: #e1d199;
+    color: #000000;
+}
+.error >p{
+    color: #ee1d1d;
+    font-weight: 400;
+    font-size: 14px;
+}

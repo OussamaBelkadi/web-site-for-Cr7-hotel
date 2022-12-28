@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+*
+{
+    font-family: 'Cairo';
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.tp{
+    display: none;
+}
+dialog{
+    background-color: blueviolet;
+    height: 200px;
+    width: 320px;
+}
+.custom-bg{
+    background: rgb(219, 158, 43);
+}
+.custom-bg:hover{
+    background: rgb(222, 178, 97);
+}
+.form{
+    margin-top: -60px;
+    z-index: 2;
+    position: relative;
+}
+.content{
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 4px;
+}
+.card{
+    width: 300px;
+    min-height: 440px;
+    display: flex;
+    align-items: center;
+} 
+.img > img{
+    padding-top: 20Px;
+    width: 275px;
+    height: 220px;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.disc{
+    padding: 20px 15px;
+    width: 100%;
+    min-height: 230px;
+    
+}
+.disc > .suitetype{
+    font-size: 22px;
+}
+.btn-r{
+    margin: 20px 0px;
+}
+.btn-r >  a button{
+    border: 1px solid rgb(229, 188, 85);
+    width: 80px;
+    background: rgb(200, 141, 40);
+    border-radius: 2px;
+    color: #fff;
+
+}

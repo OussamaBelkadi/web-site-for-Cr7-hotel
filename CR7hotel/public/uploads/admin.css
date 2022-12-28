@@ -1,0 +1,131 @@
+:root {
+    --main-bg-color: #c9b43b;
+    --main-text-color: #ffffff;
+    --second-text-color: #e0c454;
+    --second-bg-color: #bea159;
+  }
+  body{
+    min-height: 100vh;
+    background-image: linear-gradient(
+      to right,
+      #b1aa5b,
+      #b1aa5b,
+      #b1aa5b,
+      #b1aa5b,
+      #b1aa5b
+    );
+  }
+  .primary-text {
+    color: var(--main-text-color);
+  }
+  
+  .second-text {
+    color: var(--second-text-color);
+  }
+  
+  .primary-bg {
+    background-color: var(--main-bg-color);
+  }
+  
+  .secondary-bg {
+    background-color: var(--second-bg-color);
+  }
+  
+  .rounded-full {
+    border-radius: 100%;
+  }
+  
+  #wrapper {
+    overflow-x: hidden;
+    background-image: linear-gradient(
+      to right,
+      #b1aa5b,
+      #b1aa5b,
+      #b1aa5b,
+      #b1aa5b,
+      #b1aa5b
+    );
+  }
+  
+  #sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin 0.25s ease-out;
+    -moz-transition: margin 0.25s ease-out;
+    -o-transition: margin 0.25s ease-out;
+    transition: margin 0.25s ease-out;
+  }
+  
+  #sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+  }
+  
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+  }
+  
+  #page-content-wrapper {
+    min-width: 100vw;
+  }
+  
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+  
+  #menu-toggle {
+    cursor: pointer;
+  }
+  
+  .list-group-item {
+    border: none;
+    padding: 20px 30px;
+  }
+  
+  .list-group-item.active {
+    background-color: transparent;
+    color: var(--main-text-color);
+    font-weight: bold;
+    border: none;
+  }
+ .addproduct{
+    margin-left: 25px; 
+  }
+  .addproduct > button{
+    border-radius: 2Px;
+    color: rgb(0, 0, 0);
+    background: #fff;
+    width: 80px;
+    border-radius: 2px;
+    border: rgb(0, 0, 0) solid 1px;
+  }
+  .addproduct > button:hover{
+    background: transparent;
+    color: #fff; border: 1px solid #fff;
+    letter-spacing: 1px;
+  }
+  .mod  > button{
+    border: 1px solid #bea159;
+    background: #fff;
+    border-radius: 4px;
+  }
+  .sup > button{
+    border: 1px solid #bea159;
+    background: #fff;
+    border-radius: 4px;
+  }
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
+  
